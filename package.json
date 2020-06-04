@@ -1,0 +1,13 @@
+{
+  "name": "arena-fs",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "scripts": {
+  	"test": "jest",
+  	"lint": "eslint ./src"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "jest": "^26.0.1"
+  }
+}
