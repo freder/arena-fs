@@ -1,3 +1,8 @@
-console.log('TODO');
+import { test } from './utils';
 
-export {};
+
+export const main = () => {
+	console.log(test());
+};
+
+main();

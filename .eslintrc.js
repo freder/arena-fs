@@ -1,27 +1,34 @@
 module.exports = {
-	root: true,
-	parser: '@typescript-eslint/parser',
-	env: {
-		node: true,
-		// browser: true,
-		commonjs: true,
-		es6: true
+	'parser': '@typescript-eslint/parser',
+	'parserOptions': {
+		// project: './tsconfig.json',
+		'ecmaVersion': 'latest',
+		'sourceType': 'module'
 	},
-	plugins: [
-		'@typescript-eslint',
-		'jest',
-	],
-	extends: [
+	'env': {
+		'es2021': true,
+		'node': true
+	},
+	'extends': [
 		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended',
-		'plugin:jest/recommended',
+		'plugin:@typescript-eslint/recommended'
 	],
-	rules: {
-		indent: ['error', 'tab', { SwitchCase: 1 }],
-		'linebreak-style': ['error', 'unix'],
-		quotes: ['error', 'single'],
-		semi: ['error', 'always'],
-
-		'@typescript-eslint/no-var-requires': 0,
+	'plugins': [
+		'@typescript-eslint'
+	],
+	'rules': {
+		'indent': ['error', 'tab', { 'SwitchCase': 1 }],
+		'linebreak-style': [
+			'error',
+			'unix'
+		],
+		'quotes': [
+			'error',
+			'single'
+		],
+		'semi': [
+			'error',
+			'always'
+		]
 	}
 };
